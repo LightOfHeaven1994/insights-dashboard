@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { Grid, GridItem } from '@patternfly/react-core';
-import { PageSection, PageSectionVariants, Title } from '@patternfly/react-core';
+import { PageSection, Title } from '@patternfly/react-core';
 import Masonry from 'react-masonry-css';
 import { PermissionContext } from '../PermissionsProvider/PermissionsProvider';
 import { connect } from 'react-redux';
@@ -36,13 +36,13 @@ const Dashboard = (/*{ workloads }*/) => {
     }, [chrome]);
 
     return (<React.Fragment>
-        <PageSection isWidthLimited variant={ PageSectionVariants.light } className="insd-c-dashboard-header">
+        <PageSection hasBodyWrapper isWidthLimited  className="insd-c-dashboard-header">
             <Title headingLevel="h1" size="2xl" className="pf-v5-u-screen-reader">
                 {intl.formatMessage(messages.dashboardTitle)}
             </Title>
             <SystemInventoryHeader/>
         </PageSection>
-        <PageSection isFilled={true} isWidthLimited>
+        <PageSection hasBodyWrapper isFilled={true} isWidthLimited>
             <Grid hasGutter>
                 {newRules?.length > 0 && permission.vulnerability && <GridItem>
                     <NewRules />

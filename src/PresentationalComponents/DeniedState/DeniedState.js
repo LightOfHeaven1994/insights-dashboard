@@ -3,7 +3,7 @@ import './DeniedState.scss';
 import {
     EmptyState,
     EmptyStateBody,
-    EmptyStateVariant, EmptyStateHeader
+    EmptyStateVariant, 
 } from '@patternfly/react-core/dist/esm/components/EmptyState';
 
 import { Card } from '@patternfly/react-core/dist/esm/components/Card/Card';
@@ -18,8 +18,7 @@ const DeniedState = ({ appName }) => {
 
     return (
         <Card className='insd-c-dashboard__card'>
-            <EmptyState variant={ EmptyStateVariant.full } className='insd-c-empty-state-denied'>
-                <EmptyStateHeader titleText={<>{intl.formatMessage(messages.deniedStateTitle, { appName })}</>} headingLevel="h2" />
+            <EmptyState  headingLevel="h2"   titleText={<>{intl.formatMessage(messages.deniedStateTitle, { appName })}</>} variant={ EmptyStateVariant.full } className='insd-c-empty-state-denied'>
                 <EmptyStateBody className='insd-c-empty-state-denied__body'>
                     {intl.formatMessage(messages.deniedStateBody)}
                 </EmptyStateBody>

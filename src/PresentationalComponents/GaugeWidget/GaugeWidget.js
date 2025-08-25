@@ -1,6 +1,13 @@
 import './_ins-c-gauge-widget.scss';
 
-import { Button, Modal, Stack, StackItem } from '@patternfly/react-core';
+import {
+	Button,
+	Stack,
+	StackItem
+} from '@patternfly/react-core';
+import {
+	Modal
+} from '@patternfly/react-core/deprecated';
 import React, { Component } from 'react';
 
 import { Gauge } from '@redhat-cloud-services/frontend-components-charts/Gauge';

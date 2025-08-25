@@ -16,7 +16,7 @@ const ZeroStateFooter = ({
     documentation = zeroStateConstants[`${appName.toUpperCase()}_ZERO_STATE`].documentation
 }) => {
     return (
-        <PageSection className='footer' isWidthLimited>
+        <PageSection hasBodyWrapper className='footer' isWidthLimited>
             <Card>
                 <Grid lg={ 4 } hasGutter className='pf-v5-u-p-xl'>
                     <GridItem>

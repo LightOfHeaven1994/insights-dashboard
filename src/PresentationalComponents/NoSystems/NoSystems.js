@@ -8,10 +8,8 @@ import {
     Button,
     EmptyState,
     EmptyStateBody,
-    EmptyStateIcon,
     EmptyStateVariant,
     Stack, StackItem,
-    EmptyStateHeader,
     EmptyStateFooter  } from '@patternfly/react-core';
 import { Section } from '@redhat-cloud-services/frontend-components';
 import { ChartSpikeIcon, PlusCircleIcon } from '@patternfly/react-icons';
@@ -29,11 +27,7 @@ const NoSystems = ({ workloadIs }) => {
     };
 
     return <Section>
-        <EmptyState variant={ EmptyStateVariant.sm } className='insd-c-empty-state-no-systems'>
-            <EmptyStateHeader
-                titleText={<>{workloadTypes[workloadIs]?.title || intl.formatMessage(messages.noSystemsTitle)}</>}
-                icon={<EmptyStateIcon icon={ workloadTypes[workloadIs]?.icon || ChartSpikeIcon } />}
-                headingLevel='h5' />
+        <EmptyState  headingLevel='h5' icon={ workloadTypes[workloadIs]?.icon || ChartSpikeIcon }  titleText={<>{workloadTypes[workloadIs]?.title || intl.formatMessage(messages.noSystemsTitle)}</>} variant={ EmptyStateVariant.sm } className='insd-c-empty-state-no-systems'>
             <EmptyStateBody>
                 <Stack hasGutter>
                     <StackItem>

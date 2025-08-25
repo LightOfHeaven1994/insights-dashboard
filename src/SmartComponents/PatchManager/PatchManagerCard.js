@@ -10,7 +10,7 @@ import { ExpandableCardTemplate } from '../../PresentationalComponents/Template/
 import FailState from '../../PresentationalComponents/FailState/FailState';
 import { PieChart } from '../../ChartTemplates/PieChart/PieChartTemplate';
 import PropTypes from 'prop-types';
-import { chart_color_blue_200, chart_color_blue_300, chart_color_blue_400, global_disabled_color_100 } from '@patternfly/react-tokens';
+import { chart_color_blue_200, chart_color_blue_300, chart_color_blue_400, t_temp_dev_tbd as global_disabled_color_100 /* CODEMODS: you should update this color token */ } from '@patternfly/react-tokens';
 import { connect } from 'react-redux';
 import messages from '../../Messages';
 import { useIntl } from 'react-intl';

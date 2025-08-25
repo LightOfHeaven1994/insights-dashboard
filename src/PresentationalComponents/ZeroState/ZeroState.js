@@ -8,7 +8,7 @@ import {
     List,
     ListItem,
     PageSection,
-    TextContent,
+    Content,
     Title,
     Grid,
     GridItem,
@@ -79,7 +79,7 @@ const ZeroState = () => {
                             </InsightsLink>
                         </FlexItem>
                         <FlexItem>
-                            <Button
+                            <Button icon={<ArrowRightIcon />}
                                 className='pf-m-plain'
                                 component='a'
                                 variant='secondary'
@@ -87,22 +87,22 @@ const ZeroState = () => {
                                 rel='noreferrer'
                                 href='https://www.redhat.com/en/technologies/management/insights'>
                                 {intl.formatMessage(messages.learnmoreRHI)}&nbsp;&nbsp;&nbsp;
-                                <ArrowRightIcon />
+                                
                             </Button>
                         </FlexItem>
                     </Flex>
                 </GridItem>
             </Grid>
         </MarketingBanner>
-        <PageSection isWidthLimited>
+        <PageSection hasBodyWrapper isWidthLimited>
             <Grid lg={ 6 } hasGutter>
                 <GridItem>
                     <Card style={ { height: '100%' } }>
                         <CardHeader>
-                            <TextContent>
+                            <Content>
                                 <Title headingLevel='h2'>{intl.formatMessage(messages.zslblTitle)}</Title>
                                 <p>{intl.formatMessage(messages.zslblBody)}</p>
-                            </TextContent>
+                            </Content>
                         </CardHeader>
                         <CardBody>
                             <IconList>
@@ -118,10 +118,10 @@ const ZeroState = () => {
                 <GridItem>
                     <Card style={ { height: '100%' } }>
                         <CardHeader>
-                            <TextContent>
+                            <Content>
                                 <Title headingLevel='h2'>{intl.formatMessage(messages.zsrblTitle)}</Title>
                                 <p>{intl.formatMessage(messages.zsrblBody)}</p>
-                            </TextContent>
+                            </Content>
                         </CardHeader>
                         <CardBody>
                             <IconList>
@@ -168,17 +168,17 @@ const ZeroState = () => {
                 </FlexItem>
             </Flex>
         </MarketingBanner>
-        <PageSection isWidthLimited>
+        <PageSection hasBodyWrapper isWidthLimited>
             <Flex direction={ { default: 'column' } }>
                 <FlexItem spacer={ { default: 'spacerXl' } }>
-                    <TextContent>
+                    <Content>
                         <Title headingLevel='h3'>
                             {intl.formatMessage(messages.insightsandsatellite)}
                         </Title>
                         <div className='insd-c-width-limiter' style={ { '--insd-c-width-limiter--MaxWidth': '900px' } }>
                             <p>{intl.formatMessage(messages.satellite)}</p>
                         </div>
-                    </TextContent>
+                    </Content>
                 </FlexItem>
                 <FlexItem>
                     <Grid hasGutter>

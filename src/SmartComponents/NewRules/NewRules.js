@@ -128,7 +128,7 @@ const NewRules = () => {
                                 <Text component="h4" className="pf-v5-u-mb-xs">
                                     <Icon
                                         style={{ verticalAlign: -1 }}
-                                        color="var(--pf-v5-global--danger-color--100)"
+                                        color="var(--pf-t--temp--dev--tbd)"/* CODEMODS: original v5 color was --pf-v5-global--danger-color--100 */
                                         className="pf-v5-u-mr-sm"
                                     >
                                         <ExclamationCircleIcon/>

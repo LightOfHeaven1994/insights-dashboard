@@ -21,11 +21,11 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { SEVERITY_MAP } from '../../AppConstants';
 import { capitalize, globalFilters } from '../../Utilities/Common';
 import {
-    global_disabled_color_100,
-    global_palette_blue_100,
-    global_palette_blue_200,
-    global_palette_blue_300,
-    global_palette_blue_400
+    t_temp_dev_tbd as global_disabled_color_100 /* CODEMODS: you should update this color token */,
+    t_temp_dev_tbd as global_palette_blue_100 /* CODEMODS: you should update this color token */,
+    t_temp_dev_tbd as global_palette_blue_200 /* CODEMODS: you should update this color token */,
+    t_temp_dev_tbd as global_palette_blue_300 /* CODEMODS: you should update this color token */,
+    t_temp_dev_tbd as global_palette_blue_400 /* CODEMODS: you should update this color token */
 } from '@patternfly/react-tokens';
 
 import { useDispatch, useSelector } from 'react-redux';
