@@ -72,9 +72,9 @@ const Dashboard = (/*{ workloads }*/) => {
                         <RemediationsCard />
                     }
 
-                    {/* {permission.patch &&
+                    {permission.patch &&
                         <PatchManagerCard />
-                    } */}
+                    }
 
                     {/* {permission.ros &&
                         <ResourceOptimizationCard/>
