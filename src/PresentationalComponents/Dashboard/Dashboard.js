@@ -76,9 +76,9 @@ const Dashboard = (/*{ workloads }*/) => {
                         <PatchManagerCard />
                     }
 
-                    {/* {permission.ros &&
+                    {permission.ros &&
                         <ResourceOptimizationCard/>
-                    } */}
+                    }
                 </Masonry>
             </Grid>
         </PageSection>

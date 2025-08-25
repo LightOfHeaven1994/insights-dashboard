@@ -8,8 +8,7 @@ import { TemplateCardBody } from '../../PresentationalComponents/Template/Templa
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import FailState from '../../PresentationalComponents/FailState/FailState';
-import { Flex, FlexItem } from '@patternfly/react-core/dist/esm/layouts';
-import { Button, Spinner } from '@patternfly/react-core';
+import { Button, Flex, FlexItem, Spinner } from '@patternfly/react-core';
 import InsightsLink from '@redhat-cloud-services/frontend-components/InsightsLink';
 
 const ResourceOptimizationCard = ({
