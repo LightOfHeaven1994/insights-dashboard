@@ -66,7 +66,7 @@ const Dashboard = (/*{ workloads }*/) => {
                         <ComplianceCard />
                     }
 
-                    {/* <CentOsCard /> */}
+                    <CentOsCard />
 
                     {/* {permission.remediations &&
                         <RemediationsCard />
