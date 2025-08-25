@@ -3,7 +3,7 @@ import './DeniedState.scss';
 import {
     EmptyState,
     EmptyStateBody,
-    EmptyStateVariant, 
+    EmptyStateVariant
 } from '@patternfly/react-core/dist/esm/components/EmptyState';
 
 import { Card } from '@patternfly/react-core/dist/esm/components/Card/Card';

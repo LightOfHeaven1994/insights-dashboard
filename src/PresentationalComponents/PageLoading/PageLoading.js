@@ -7,6 +7,6 @@ import {
 } from '@patternfly/react-core';
 
 const PageLoading = () => <EmptyState  headingLevel='h4' icon={Spinner}  titleText="Loading">
-    </EmptyState>;
+</EmptyState>;
 
 export default PageLoading;

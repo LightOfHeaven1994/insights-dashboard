@@ -40,8 +40,7 @@ const App = (props) => {
             setSystemsLoading(false);
         });
     }, []);
-    console.log("DEBUG here!")
-    console.log("DEBUG systemsLoading",systemsLoading)
+
     return systemsLoading ? <PageLoading />
         : (
             <PermissionsProvider>

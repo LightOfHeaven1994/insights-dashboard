@@ -2,23 +2,23 @@
 import './_StackChartTemplate.scss';
 
 import {
-	Chart,
-	ChartAxis,
-	ChartBar,
-	ChartLabel,
-	ChartLegend,
-	ChartStack,
-	ChartTooltip
+    Chart,
+    ChartAxis,
+    ChartBar,
+    ChartLabel,
+    ChartLegend,
+    ChartStack,
+    ChartTooltip
 } from '@patternfly/react-charts/victory';
 import React, { useEffect, useRef, useState } from 'react';
 
 // import c_button_m_control_active_after_BorderBottomColor from '@patternfly/react-tokens/dist/esm/c_button_m_control_active_after_BorderBottomWidth';
 import { capitalize } from '../../Utilities/Common';
-import global_palette_gold_200/* CODEMODS: you should update this color token */ from "@patternfly/react-tokens/dist/esm/t_temp_dev_tbd";
-import global_palette_gold_400/* CODEMODS: you should update this color token */ from "@patternfly/react-tokens/dist/esm/t_temp_dev_tbd";
-import global_palette_orange_300/* CODEMODS: you should update this color token */ from "@patternfly/react-tokens/dist/esm/t_temp_dev_tbd";
-import global_palette_red_200/* CODEMODS: you should update this color token */ from "@patternfly/react-tokens/dist/esm/t_temp_dev_tbd";
-import global_primary_color_200/* CODEMODS: you should update this color token */ from "@patternfly/react-tokens/dist/esm/t_temp_dev_tbd";
+import global_palette_gold_200/* CODEMODS: you should update this color token */ from '@patternfly/react-tokens/dist/esm/t_temp_dev_tbd';
+import global_palette_gold_400/* CODEMODS: you should update this color token */ from '@patternfly/react-tokens/dist/esm/t_temp_dev_tbd';
+import global_palette_orange_300/* CODEMODS: you should update this color token */ from '@patternfly/react-tokens/dist/esm/t_temp_dev_tbd';
+import global_palette_red_200/* CODEMODS: you should update this color token */ from '@patternfly/react-tokens/dist/esm/t_temp_dev_tbd';
+import global_primary_color_200/* CODEMODS: you should update this color token */ from '@patternfly/react-tokens/dist/esm/t_temp_dev_tbd';
 import propTypes from 'prop-types';
 
 export const StackChart = ({ ariaTitle, ariaDesc, data, height, maxWidth, legendHeight, legendClick, legendWidth, style,

@@ -1,12 +1,12 @@
 import './_ins-c-gauge-widget.scss';
 
 import {
-	Button,
-	Stack,
-	StackItem
+    Button,
+    Stack,
+    StackItem
 } from '@patternfly/react-core';
 import {
-	Modal
+    Modal
 } from '@patternfly/react-core/deprecated';
 import React, { Component } from 'react';
 

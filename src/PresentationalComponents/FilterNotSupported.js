@@ -5,7 +5,7 @@ import SearchIcon from '@patternfly/react-icons/dist/esm/icons/search-icon';
 import messages from '../Messages';
 import { useIntl } from 'react-intl';
 import { Link } from 'react-router-dom';
-import { EmptyState, EmptyStateBody,  } from '@patternfly/react-core';
+import { EmptyState, EmptyStateBody  } from '@patternfly/react-core';
 
 const FilterNotSupported = ({ href, title, appName }) => {
     const intl = useIntl();

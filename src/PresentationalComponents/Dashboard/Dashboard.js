@@ -23,7 +23,7 @@ import './dashboard.scss';
 
 //We will be using this later. commenting out for now.
 const Dashboard = (/*{ workloads }*/) => {
-    console.log("DEBUG HERE")
+    console.log('DEBUG Dashboard');
     const permission = useContext(PermissionContext);
     const intl = useIntl();
     const newRules = useSelector(({ DashboardStore }) => DashboardStore.vulnerabilities.recent_rules);
@@ -58,7 +58,7 @@ const Dashboard = (/*{ workloads }*/) => {
                         <VulnerabilityCard />
                     }
 
-                    {permission.advisor &&
+                    {/* {permission.advisor &&
                         <AdvisorCard />
                     }
 
@@ -78,7 +78,7 @@ const Dashboard = (/*{ workloads }*/) => {
 
                     {permission.ros &&
                         <ResourceOptimizationCard/>
-                    }
+                    } */}
                 </Masonry>
             </Grid>
         </PageSection>

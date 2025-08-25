@@ -1,14 +1,11 @@
 import './PieChartTemplate.scss';
 
 import {
-	ChartLabel
-} from '@patternfly/react-charts/dist/esm/victory/components/ChartLabel/ChartLabel';
-import {
-	ChartLegend
-} from '@patternfly/react-charts/dist/esm/victory/components/ChartLabel/ChartLabel';
-import {
-	ChartPie
-} from '@patternfly/react-charts/dist/esm/victory/components/ChartLabel/ChartLabel';
+    ChartLabel,
+    ChartLegend,
+    ChartPie
+} from '@patternfly/react-charts/victory';
+
 import React from 'react';
 import propTypes from 'prop-types';
 
