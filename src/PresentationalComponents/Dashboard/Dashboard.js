@@ -62,9 +62,9 @@ const Dashboard = (/*{ workloads }*/) => {
                         <AdvisorCard />
                     }
 
-                    {/* {permission.compliance &&
+                    {permission.compliance &&
                         <ComplianceCard />
-                    } */}
+                    }
 
                     {/* <CentOsCard /> */}
 

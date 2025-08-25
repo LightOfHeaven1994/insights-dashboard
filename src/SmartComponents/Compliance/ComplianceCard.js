@@ -13,10 +13,11 @@ import {
     EmptyStateActions,
     EmptyStateBody,
     EmptyStateVariant,
+    Flex,
+    FlexItem,
     Spinner,
     Title
-} from '@patternfly/react-core/dist/esm/components';
-import { Flex, FlexItem } from '@patternfly/react-core/dist/esm/layouts';
+} from '@patternfly/react-core';
 import React, { useEffect } from 'react';
 import { TemplateCardActions, TemplateCardBody } from '../../PresentationalComponents/Template/TemplateCard';
 import { supportsGlobalFilter, workloadsPropType } from '../../Utilities/Common';
