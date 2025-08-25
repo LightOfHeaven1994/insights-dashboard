@@ -58,25 +58,25 @@ const Dashboard = (/*{ workloads }*/) => {
                         <VulnerabilityCard />
                     }
 
-                    {/* {permission.advisor &&
+                    {permission.advisor &&
                         <AdvisorCard />
                     }
 
-                    {permission.compliance &&
+                    {/* {permission.compliance &&
                         <ComplianceCard />
-                    }
+                    } */}
 
-                    <CentOsCard />
+                    {/* <CentOsCard /> */}
 
-                    {permission.remediations &&
+                    {/* {permission.remediations &&
                         <RemediationsCard />
-                    }
+                    } */}
 
-                    {permission.patch &&
+                    {/* {permission.patch &&
                         <PatchManagerCard />
-                    }
+                    } */}
 
-                    {permission.ros &&
+                    {/* {permission.ros &&
                         <ResourceOptimizationCard/>
                     } */}
                 </Masonry>

@@ -8,24 +8,25 @@ import {
     Card,
     CardBody,
     CardTitle,
+    Content,
     Divider,
+    Flex,
+    FlexItem,
     Skeleton,
     Spinner,
-    TextContent,
     Title,
     Tooltip,
     TooltipPosition
-} from '@patternfly/react-core/dist/esm/components';
-import { Flex, FlexItem } from '@patternfly/react-core/dist/esm/layouts';
+} from '@patternfly/react-core';
 import React, { useEffect, useMemo, useState } from 'react';
 import { SEVERITY_MAP } from '../../AppConstants';
 import { capitalize, globalFilters } from '../../Utilities/Common';
 import {
-    t_temp_dev_tbd as global_disabled_color_100 /* CODEMODS: you should update this color token */,
-    t_temp_dev_tbd as global_palette_blue_100 /* CODEMODS: you should update this color token */,
-    t_temp_dev_tbd as global_palette_blue_200 /* CODEMODS: you should update this color token */,
-    t_temp_dev_tbd as global_palette_blue_300 /* CODEMODS: you should update this color token */,
-    t_temp_dev_tbd as global_palette_blue_400 /* CODEMODS: you should update this color token */
+    t_global_text_color_disabled,
+    chart_color_blue_100,
+    chart_color_blue_200,
+    chart_color_blue_300,
+    chart_color_blue_400
 } from '@patternfly/react-tokens';
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -44,7 +45,7 @@ import { useIntl } from 'react-intl';
 import InsightsLink from '@redhat-cloud-services/frontend-components/InsightsLink';
 
 const Advisor = () => {
-    const colors = [global_palette_blue_100.value, global_palette_blue_200.value, global_palette_blue_300.value, global_palette_blue_400.value];
+    const colors = [chart_color_blue_100.value, chart_color_blue_200.value, chart_color_blue_300.value, chart_color_blue_400.value];
     const intl = useIntl();
     const [categoryData, setCategoryData] = useState([]);
     const [colorScale, setColorScale] = useState();
@@ -133,7 +134,7 @@ const Advisor = () => {
                 }
             ]);
 
-            setColorScale(categoryCount === 0 ? [global_disabled_color_100.value] : colors);
+            setColorScale(categoryCount === 0 ? [t_global_text_color_disabled.value] : colors);
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [recStats, recStatsStatus]);
@@ -171,13 +172,13 @@ const Advisor = () => {
                                         : <Skeleton fontSize="2xl" width="250px" />
                                     }
                                 </Flex>
-                                <TextContent
+                                <Content
                                     className='insd-c-width-limiter pf-v5-u-text-align-center'
                                     style={{ '--insd-c-width-limiter--MaxWidth': '34ch' }}>
                                     <p className='pf-v5-u-font-size-md pf-v5-u-text-center'>
                                         {intl.formatMessage(messages.advisorCardMessage)}
                                     </p>
-                                </TextContent>
+                                </Content>
                             </FlexItem>
                             <InsightsLink app='advisor' to={INCIDENT_URL}>
                                 <Button
