@@ -57,7 +57,7 @@ const ZeroState = () => {
                 <GridItem>
                     <Flex direction={ { default: 'column' } }>
                         <FlexItem>
-                            <Title headingLevel='h1' size='2xl'>
+                            <Title headingLevel='h1' size='2xl' className='pf-v6-u-text-color-inverse'>
                                 {intl.formatMessage(messages.noSystemsTitle)}
                             </Title>
                         </FlexItem>
@@ -87,7 +87,6 @@ const ZeroState = () => {
                                 rel='noreferrer'
                                 href='https://www.redhat.com/en/technologies/management/insights'>
                                 {intl.formatMessage(messages.learnmoreRHI)}&nbsp;&nbsp;&nbsp;
-                                
                             </Button>
                         </FlexItem>
                     </Flex>
@@ -147,7 +146,7 @@ const ZeroState = () => {
             } }>
             <Flex direction={ { default: 'column' } }>
                 <FlexItem spacer={ { default: 'spacerLg' } }>
-                    <Title headingLevel='h3' size='lg'>
+                    <Title headingLevel='h3' size='lg' className='pf-v6-u-text-color-inverse'>
                         {intl.formatMessage(messages.dataPrivacyAndControlsTitle)}
                     </Title>
                 </FlexItem>
@@ -161,6 +160,7 @@ const ZeroState = () => {
                     <Button
                         component='a'
                         target='_blank'
+                        style={{ color: 'white' }}
                         rel='noreferrer'
                         href={ `./security/insights` }>
                         {intl.formatMessage(messages.securityRedirect)}
@@ -186,7 +186,7 @@ const ZeroState = () => {
                             <img src={ ImgInsSmartMgmt } alt='Insights Satellite' />
                         </GridItem>
                         <GridItem md={ 6 } lg={ 7 }>
-                            <div className='insd-c-width-limiter pf-v5-u-pt-lg-on-lg' style={ { '--insd-c-width-limiter--MaxWidth': '600px' } }>
+                            <div className='insd-c-width-limiter pf-v6-u-pt-lg-on-lg' style={ { '--insd-c-width-limiter--MaxWidth': '600px' } }>
                                 <List>
                                     <ListItem>{intl.formatMessage(messages.rhm1)}</ListItem>
                                     <ListItem>{intl.formatMessage(messages.rhm2)}</ListItem>
@@ -194,11 +194,11 @@ const ZeroState = () => {
                                 </List>
                             </div>
                         </GridItem>
-                        <GridItem md={ 6 } lg={ 7 } className='pf-v5-u-pl-lg'>
+                        <GridItem md={ 6 } lg={ 7 } className='pf-v6-u-pl-lg'>
                             <Flex>
                                 <FlexItem>
                                     <Button
-                                        className='pf-m-secondary'
+                                        variant='secondary'
                                         component='a'
                                         target='_blank'
                                         rel='noreferrer'
@@ -208,7 +208,7 @@ const ZeroState = () => {
                                 </FlexItem>
                                 <FlexItem>
                                     <Button
-                                        className='pf-m-secondary'
+                                        variant='secondary'
                                         component='a'
                                         target='_blank'
                                         rel='noreferrer'

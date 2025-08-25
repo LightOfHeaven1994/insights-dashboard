@@ -23,6 +23,7 @@ import './dashboard.scss';
 
 //We will be using this later. commenting out for now.
 const Dashboard = (/*{ workloads }*/) => {
+    console.log("DEBUG HERE")
     const permission = useContext(PermissionContext);
     const intl = useIntl();
     const newRules = useSelector(({ DashboardStore }) => DashboardStore.vulnerabilities.recent_rules);

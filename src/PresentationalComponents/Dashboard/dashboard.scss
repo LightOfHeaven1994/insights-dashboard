@@ -1,4 +1,4 @@
-@import "~@patternfly/patternfly/sass-utilities/_all";
+// @import "~@patternfly/patternfly/sass-utilities/_all";
 @import "~@patternfly/patternfly/utilities/Text/text";
 @import "~@patternfly/patternfly/utilities/Display/display";
 @import "~@patternfly/patternfly/utilities/Accessibility/accessibility";
@@ -14,28 +14,28 @@
   > .pf-v5-c-chart > svg {
     max-width: #{pf-size-prem(80px)};
 
-    @media screen and (min-width: $pf-v5-global--breakpoint--md) {
-      max-width: #{pf-size-prem(80px)};
-    }
+    // @media screen and (min-width: $pf-v6-global--breakpoint--md) {
+    //   max-width: #{pf-size-prem(80px)};
+    // }
   }
 }
 
-.insd-c-dashboard__card {
-  .pf-v5-c-chart {
-    @media screen and (min-width: $pf-v5-global--breakpoint--lg) {
-      width: 80px;
-      height: 80px;
-    }
-  }
-}
+// .insd-c-dashboard__card {
+//   .pf-v5-c-chart {
+//     @media screen and (min-width: $pf-v5-global--breakpoint--lg) {
+//       width: 80px;
+//       height: 80px;
+//     }
+//   }
+// }
 
 .insd-c-dashboard__card-chart-container {
   --insd-c-dashboard__card-chart-container--item--spacer: var(--pf-v5-global--spacer--lg);
   --insd-c-dashboard__card-chart-container--item--FlexDirection: column;
 
-  @media screen and (min-width: $pf-v5-global--breakpoint--sm) {
-    --insd-c-dashboard__card-chart-container--item--FlexDirection: row;
-  }
+  // @media screen and (min-width: $pf-v5-global--breakpoint--sm) {
+  //   --insd-c-dashboard__card-chart-container--item--FlexDirection: row;
+  // }
 
   display: flex;
   align-items: center;
@@ -43,10 +43,10 @@
   row-gap: var(--insd-c-dashboard__card-chart-container--item--spacer);
 
   > * {
-    @media screen and (min-width: $pf-v5-global--breakpoint--sm) {
-      margin-right: var(--insd-c-dashboard__card-chart-container--item--spacer);
-      margin-bottom: 0;
-    }
+    // @media screen and (min-width: $pf-v5-global--breakpoint--sm) {
+    //   margin-right: var(--insd-c-dashboard__card-chart-container--item--spacer);
+    //   margin-bottom: 0;
+    // }
 
     &:last-child {
       --insd-c-dashboard__card-chart-container--item--spacer: 0;
@@ -66,10 +66,10 @@
   align-self: stretch;
   justify-content: center;
 
-  @media screen and (min-width: $pf-v5-global--breakpoint--sm) {
-    align-self: center;
-    justify-content: flex-start;
-  }
+  // @media screen and (min-width: $pf-v5-global--breakpoint--sm) {
+  //   align-self: center;
+  //   justify-content: flex-start;
+  // }
 
   > .pf-v5-c-table {
     width: Min(32ch, 100%);

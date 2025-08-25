@@ -1,4 +1,4 @@
-@import '~@patternfly/patternfly/sass-utilities/all';
+// @import '~@patternfly/patternfly/sass-utilities/all';
 
 // Gauge widget layout
 .ins-c-gauge-widget {
@@ -60,13 +60,13 @@
   flex-flow: row wrap;
 
   // @mobile only
-  @media screen and (max-width: $pf-v5-global--breakpoint--sm) {
-    justify-content: center;
-  }
+  // @media screen and (max-width: $pf-v5-global--breakpoint--sm) {
+  //   justify-content: center;
+  // }
 
-  @media screen and (min-width: $pf-v5-global--breakpoint--lg) {
-    flex-wrap: nowrap;
-  }
+  // @media screen and (min-width: $pf-v5-global--breakpoint--lg) {
+  //   flex-wrap: nowrap;
+  // }
 }
 
 
@@ -81,10 +81,10 @@
   margin-right: var(--ins-c-gauge-widget__graph--MarginRight);
 
   // @desktop
-  @media screen and (min-width: $pf-v5-global--breakpoint--sm) {
-    justify-self: left;
-    width: var(--ins-c-gauge-widget__graph--Width);
-  }
+  // @media screen and (min-width: $pf-v5-global--breakpoint--sm) {
+  //   justify-self: left;
+  //   width: var(--ins-c-gauge-widget__graph--Width);
+  // }
 
   // not sure why gauge container is larger than the gauge itself,
   // would like to figure that out
@@ -142,9 +142,9 @@
   flex: 1 0 var(--ins-c-gauge-widget__legend--FlexBasis--sm);
   align-self: center;
 
-  @media screen and (min-width: $pf-v5-global--breakpoint--md) {
-    flex-basis:  var(--ins-c-gauge-widget__legend--FlexBasis);
-  }
+  // @media screen and (min-width: $pf-v6-global--breakpoint--md) {
+  //   flex-basis:  var(--ins-c-gauge-widget__legend--FlexBasis);
+  // }
 
   > * + * {
     margin-top: var(--ins-c-gauge-widget__legend-item--MarginTop);

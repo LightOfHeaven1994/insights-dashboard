@@ -1,4 +1,4 @@
-@import "~@patternfly/patternfly/sass-utilities/_all.scss";
+// @import "~@patternfly/patternfly/sass-utilities/_all.scss";
 
 .insd-c-dashboard-data-list {
     --pf-v5-c-data-list__item-control--not-last-child--MarginRight: var(--pf-v5-global--spacer--xs);
@@ -14,22 +14,22 @@
     --insd-c-dashboard-data-list__date--MarginTop: 0;
     --insd-c-dashboard-data-list__item--m-expanded__date--MarginTop: var(--pf-v5-global--spacer--md);
 
-    @media screen and (min-width: $pf-v5-global--breakpoint--md) {
-        --pf-v5-c-data-list__item-control--MarginLeft: var(--pf-v5-global--spacer--md);
-        --pf-v5-c-data-list__toggle--MarginLeft: var(--pf-v5-global--spacer--sm);
-        --pf-v5-c-data-list__item-control--PaddingTop: calc(var(--pf-v5-global--spacer--sm) + var(--pf-v5-global--spacer--xs));
-        --pf-v5-c-data-list__item-control--MarginRight: calc(var(--pf-v5-global--spacer--md) * -1);
-        --pf-v5-c-data-list__expandable-content-body--PaddingTop: var(--pf-v5-global--spacer--sm);
-    }
+    // @media screen and (min-width: $pf-v6-global--breakpoint--md) {
+    //     --pf-v5-c-data-list__item-control--MarginLeft: var(--pf-v5-global--spacer--md);
+    //     --pf-v5-c-data-list__toggle--MarginLeft: var(--pf-v5-global--spacer--sm);
+    //     --pf-v5-c-data-list__item-control--PaddingTop: calc(var(--pf-v5-global--spacer--sm) + var(--pf-v5-global--spacer--xs));
+    //     --pf-v5-c-data-list__item-control--MarginRight: calc(var(--pf-v5-global--spacer--md) * -1);
+    //     --pf-v5-c-data-list__expandable-content-body--PaddingTop: var(--pf-v5-global--spacer--sm);
+    // }
 
-    .pf-v5-c-data-list__item {
-        &.pf-m-expanded {
+    // .pf-v5-c-data-list__item {
+    //     &.pf-m-expanded {
 
-            @media screen and (min-width: $pf-v5-global--breakpoint--md) {
-                --insd-c-dashboard-data-list__date--MarginTop: var(--insd-c-dashboard-data-list__item--m-expanded__date--MarginTop);
-            }
-        }
-    }
+    //         @media screen and (min-width: $pf-v6-global--breakpoint--md) {
+    //             --insd-c-dashboard-data-list__date--MarginTop: var(--insd-c-dashboard-data-list__item--m-expanded__date--MarginTop);
+    //         }
+    //     }
+    // }
 
     .pf-v5-c-data-list__item-control {
         margin-left: var(--pf-v5-c-data-list__item-control--MarginLeft);
@@ -43,9 +43,9 @@
     .pf-v5-c-data-list__item-control-button {
         display: none;
 
-        @media screen and (min-width: $pf-v5-global--breakpoint--md) {
-            display: inline-block;
-        }
+        // @media screen and (min-width: $pf-v6-global--breakpoint--md) {
+        //     display: inline-block;
+        // }
     }
 
     .pf-v5-c-data-list__toggle {
@@ -61,12 +61,12 @@
         position: relative;
         margin-right: var(--pf-v5-global--spacer--sm);
 
-        @media screen and (min-width: $pf-v5-global--breakpoint--md) {
-            display: inline-flex;
-            min-width: 6ch;
-            text-align: right;
-            white-space: nowrap;
-        }
+        // @media screen and (min-width: $pf-v6-global--breakpoint--md) {
+        //     display: inline-flex;
+        //     min-width: 6ch;
+        //     text-align: right;
+        //     white-space: nowrap;
+        // }
 
         > * {
             position: absolute;
@@ -74,18 +74,18 @@
         }
     }
 
-    .pf-v5-c-data-list__expandable-content-body {
-        @media screen and (min-width: $pf-v5-global--breakpoint--md) {
+    // .pf-v5-c-data-list__expandable-content-body {
+    //     @media screen and (min-width: $pf-v6-global--breakpoint--md) {
 
-            --pf-v5-c-data-list__expandable-content-body--PaddingTop: var(--pf-v5-global--spacer--sm);
+    //         --pf-v5-c-data-list__expandable-content-body--PaddingTop: var(--pf-v5-global--spacer--sm);
 
-            .pf-v5-c-data-list__item-row {
-                --pf-v5-c-data-list__expandable-content-body--PaddingTop: 0;
+    //         .pf-v5-c-data-list__item-row {
+    //             --pf-v5-c-data-list__expandable-content-body--PaddingTop: 0;
 
-                min-height: var(--ins-c-data-list__item-row--MinHeight);
-            }
-        }
-    }
+    //             min-height: var(--ins-c-data-list__item-row--MinHeight);
+    //         }
+    //     }
+    // }
 }
 
 .insd-c-dashboard-data-list__title-row {
@@ -106,10 +106,10 @@
         margin: var(--pf-v5-global--spacer--sm);
         margin-left: 0;
 
-        @media screen and (min-width: $pf-v5-global--breakpoint--md) {
-            float: right;
-            margin-left: var(--pf-v5-global--spacer--sm);
-        }
+        // @media screen and (min-width: $pf-v6-global--breakpoint--md) {
+        //     float: right;
+        //     margin-left: var(--pf-v5-global--spacer--sm);
+        // }
     }
 }
 

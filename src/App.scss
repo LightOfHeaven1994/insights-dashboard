@@ -1,5 +1,5 @@
-@import "~@redhat-cloud-services/frontend-components-utilities/styles/_all";
-@import "~@patternfly/patternfly/sass-utilities/_all.scss";
+// @import "~@redhat-cloud-services/frontend-components-utilities/styles/_all";
+// @import "~@patternfly/patternfly/sass-utilities/_all.scss";
 @import "~@patternfly/patternfly/utilities/Alignment/alignment.css";
 
 $insd-l-autofit--breakpoint-map: build-breakpoint-map();
@@ -115,30 +115,30 @@ body {
     --insd-c-width-limiter--MaxWidth: auto;
     --insd-c-width-limiter--MinWidth: 0;
 
-    @include pf-v5-build-css-variable-stack(
-        "max-width",
-        "--insd-c-width-limiter--MaxWidth",
-        $insd-c-width-limiter--breakpoint-map
-    );
-    @include pf-v5-build-css-variable-stack(
-        "min-width",
-        "--insd-c-width-limiter--MinWidth",
-        $insd-c-width-limiter--breakpoint-map
-    );
+    // @include pf-v5-build-css-variable-stack(
+    //     "max-width",
+    //     "--insd-c-width-limiter--MaxWidth",
+    //     $insd-c-width-limiter--breakpoint-map
+    // );
+    // @include pf-v5-build-css-variable-stack(
+    //     "min-width",
+    //     "--insd-c-width-limiter--MinWidth",
+    //     $insd-c-width-limiter--breakpoint-map
+    // );
 }
 
 // data-list
 .pf-v5-c-data-list {
     --ins-c-data-list__item-row--MinHeight: auto;
 
-    &.insd-m-toggle-right-on-md {
-        @media screen and (min-width: $pf-v5-global--breakpoint--md) {
-            .pf-v5-c-data-list__item-control {
-                order: 1;
-                margin-right: calc(var(--pf-v5-global--spacer--sm) * -1);
-            }
-        }
-    }
+    // &.insd-m-toggle-right-on-md {
+    //     @media screen and (min-width: $pf-v6-global--breakpoint--md) {
+    //         .pf-v5-c-data-list__item-control {
+    //             order: 1;
+    //             margin-right: calc(var(--pf-v5-global--spacer--sm) * -1);
+    //         }
+    //     }
+    // }
 
     .pf-v5-c-data-list__cell {
         &.pf-m-display-flex {
@@ -185,20 +185,20 @@ body {
         --pf-v5-c-card--BoxShadow: none;
     }
 
-    &.insd-m-toggle-right-on-md {
-        @media screen and (min-width: $pf-v5-global--breakpoint--md) {
-            .pf-v5-c-card__title {
-                flex: 1;
-            }
+    // &.insd-m-toggle-right-on-md {
+    //     @media screen and (min-width: $pf-v6-global--breakpoint--md) {
+    //         .pf-v5-c-card__title {
+    //             flex: 1;
+    //         }
 
-            .pf-v5-c-card__header-toggle {
-                order: 5;
-                margin-right: calc(var(--pf-v5-global--spacer--sm) * -1);
-                margin-left: 0;
-                padding-left: var(--pf-v5-c-card__header-toggle--MarginRight);
-            }
-        }
-    }
+    //         .pf-v5-c-card__header-toggle {
+    //             order: 5;
+    //             margin-right: calc(var(--pf-v5-global--spacer--sm) * -1);
+    //             margin-left: 0;
+    //             padding-left: var(--pf-v5-c-card__header-toggle--MarginRight);
+    //         }
+    //     }
+    // }
 }
 
 // table
@@ -284,15 +284,15 @@ body {
     gap: var(--insd-l-columns--Gap);
     column-fill: balance;
 
-    @media screen and (min-width: $pf-v5-global--breakpoint--md) {
-        columns: 2;
-    }
+    // @media screen and (min-width: $pf-v6-global--breakpoint--md) {
+    //     columns: 2;
+    // }
 
-    &.insd-m-3-col-on-xl {
-        @media screen and (min-width: $pf-v5-global--breakpoint--xl) {
-            columns: 3;
-        }
-    }
+    // &.insd-m-3-col-on-xl {
+    //     @media screen and (min-width: $pf-v5-global--breakpoint--xl) {
+    //         columns: 3;
+    //     }
+    // }
 
     // stylelint-disable no-descending-specificity
     > * {
@@ -323,11 +323,11 @@ body {
         column-gap: var(--insd-l-autofit--m-gutter--ColumnGap);
     }
 
-    @include pf-v5-build-css-variable-stack(
-        "--insd-l-autofit--GridTemplateColumns--minmax--min",
-        "--insd-l-autofit--GridTemplateColumns--min",
-        $insd-l-autofit--breakpoint-map
-    );
+    // @include pf-v5-build-css-variable-stack(
+    //     "--insd-l-autofit--GridTemplateColumns--minmax--min",
+    //     "--insd-l-autofit--GridTemplateColumns--min",
+    //     $insd-l-autofit--breakpoint-map
+    // );
 }
 
 .pf-v5-l-grid {
