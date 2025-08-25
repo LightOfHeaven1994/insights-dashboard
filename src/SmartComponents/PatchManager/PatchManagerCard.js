@@ -9,11 +9,11 @@ import { ExpandableCardTemplate } from '../../PresentationalComponents/Template/
 import FailState from '../../PresentationalComponents/FailState/FailState';
 import { PieChart } from '../../ChartTemplates/PieChart/PieChartTemplate';
 import PropTypes from 'prop-types';
-import { 
-    chart_color_blue_200, 
-    chart_color_blue_300, 
-    chart_color_blue_400, 
-    t_global_text_color_disabled 
+import {
+    chart_color_blue_200,
+    chart_color_blue_300,
+    chart_color_blue_400,
+    t_global_text_color_disabled
 } from '@patternfly/react-tokens';
 import { connect } from 'react-redux';
 import messages from '../../Messages';
