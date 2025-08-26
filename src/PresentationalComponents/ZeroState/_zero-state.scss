@@ -7,12 +7,12 @@ $ins-c-marketing-banner--breakpoint-map: build-breakpoint-map();
 }
 
 .insd-c-marketing-page {
-  --ins-m-marketing-page--RowGap: var(--pf-v6-global--spacer--xl);
-  --ins-m-marketing-page--ColumnGap: var(--pf-v6-global--spacer--xl);
-  --ins-m-marketing-page--section--PaddingTop: var(--pf-v6-global--spacer--xl);
-  --ins-m-marketing-page--section--PaddingRight: var(--pf-v6-global--spacer--2xl);
-  --ins-m-marketing-page--section--PaddingBottom: var(--pf-v6-global--spacer--xl);
-  --ins-m-marketing-page--section--PaddingLeft: var(--pf-v6-global--spacer--2xl);
+  --ins-m-marketing-page--RowGap: var(--pf-t--global--spacer--xl);
+  --ins-m-marketing-page--ColumnGap: var(--pf-t--global--spacer--xl);
+  --ins-m-marketing-page--section--PaddingTop: var(--pf-t--global--spacer--xl);
+  --ins-m-marketing-page--section--PaddingRight: var(--pf-t--global--spacer--2xl);
+  --ins-m-marketing-page--section--PaddingBottom: var(--pf-t--global--spacer--xl);
+  --ins-m-marketing-page--section--PaddingLeft: var(--pf-t--global--spacer--2xl);
 
   .insd-l-autofit {
     --insd-l-autofit--m-gutter--RowGap: var(--ins-m-marketing-page--RowGap);
@@ -27,8 +27,8 @@ $ins-c-marketing-banner--breakpoint-map: build-breakpoint-map();
   }
 
   .ins-c-marketing-banner {
-    --ins-c-marketing-banner--PaddingTop: var(--pf-v6-global--spacer--2xl);
-    --ins-c-marketing-banner--PaddingBottom: var(--pf-v6-global--spacer--2xl);
+    --ins-c-marketing-banner--PaddingTop: var(--pf-t--global--spacer--2xl);
+    --ins-c-marketing-banner--PaddingBottom: var(--pf-t--global--spacer--2xl);
   }
 
   .pf-v6-l-grid {
