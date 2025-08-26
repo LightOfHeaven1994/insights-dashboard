@@ -21,9 +21,7 @@ import RemediationsCard from '../../SmartComponents/Remediations/RemediationsCar
 import Footer from '../../SmartComponents/Footer/Footer';
 import './dashboard.scss';
 
-//We will be using this later. commenting out for now.
-const Dashboard = (/*{ workloads }*/) => {
-    console.log('DEBUG Dashboard');
+const Dashboard = () => {
     const permission = useContext(PermissionContext);
     const intl = useIntl();
     const newRules = useSelector(({ DashboardStore }) => DashboardStore.vulnerabilities.recent_rules);
