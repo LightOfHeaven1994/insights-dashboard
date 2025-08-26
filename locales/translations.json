@@ -34,8 +34,6 @@
   "dashboardTitle": "Dashboard",
   "dataPrivacyAndControls": "Red Hat Insights provides a mechanism for users to obtain actionable intelligence regarding suggested improvements to deployed Red Hat software. This document covers the security measures Red Hat puts in place to provide secure transmission, processing, and analysis of this data by those tools.",
   "dataPrivacyAndControlsTitle": "Data privacy and controls in Insights",
-  "deniedStateBody": "Contact your organization administrator(s) for more information",
-  "deniedStateTitle": "You do not have access to {appName}",
   "enhancementAdvisories": "{count, plural, one {enhancement} other {enhancements}}",
   "errorStateTitle": "{appName} has experienced an error. Contact Red Hat support if the problem persists.",
   "expand": "Expand",

@@ -139,14 +139,6 @@
     "defaultMessage": "Data privacy and controls in Insights",
     "description": "Data privacy and controls title"
   },
-  "deniedStateBody": {
-    "defaultMessage": "Contact your organization administrator(s) for more information",
-    "description": "Denied access body"
-  },
-  "deniedStateTitle": {
-    "defaultMessage": "You do not have access to {appName}",
-    "description": "Denied state title"
-  },
   "driftCardAppName": {
     "defaultMessage": "Drift",
     "description": "driftCardAppName"
