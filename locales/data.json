@@ -49,7 +49,6 @@
     "remediationsNoDataBody": "Create an Ansible Playbook to remediate or mitigate vulnerabilities or configuration issues.",
     "errorStateTitle": "{appName} has experienced an error. Contact Red Hat support if the problem persists.",
     "noSystemsTitle": "Get started with Red Hat Insights",
-    "noSystemsDescription": "With predictive analytics, avoid problems and unplanned                        downtime in your Red Hat environment. Red Hat Insights is                        included with your Red Hat Enterprise Linux subscription.",
     "noSystemsInstall": "Install the client on the RHEL system",
     "noSystemsRegister": "Register the system to Red Hat Insights",
     "noSystemsLink": "Getting started documentation",
