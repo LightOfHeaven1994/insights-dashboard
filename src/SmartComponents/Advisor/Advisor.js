@@ -146,6 +146,7 @@ const Advisor = () => {
             : <React.Fragment>
                 <ExpandableCardTemplate
                     appName='Advisor'
+                    isPlain
                     className='insd-m-toggle-right-on-md'
                     title={intl.formatMessage(messages.advisorCardHeader1)}
                     isExpanded={JSON.parse(localStorage.getItem('dashboard_expanded_advisor1') || 'true')}
@@ -194,6 +195,7 @@ const Advisor = () => {
                 <Divider inset={{ md: 'insetLg' }} />
                 <ExpandableCardTemplate
                     appName='advisor-recommendation-by-total-risk'
+                    isPlain
                     className='insd-m-toggle-right-on-md'
                     title={<Flex flexWrap={{ default: 'nowrap' }}>
                         <h3>{intl.formatMessage(messages.advisorCardHeader2)}</h3>
@@ -221,7 +223,7 @@ const Advisor = () => {
                                     </Flex>
                                 </InsightsLink>)}
                         </Flex>
-                        <Card component='div'>
+                        <Card component='div' isPlain>
                             <CardTitle>
                                 <Title headingLevel='h4' size='lg'>
                                     {intl.formatMessage(messages.advisorCardHeader3)}
