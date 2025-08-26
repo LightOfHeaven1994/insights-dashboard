@@ -18,7 +18,6 @@ import SystemInventoryHeader from '../../SmartComponents/SystemInventory/SystemI
 import NewRules from '../../SmartComponents/NewRules/NewRules';
 import PatchManagerCard from '../../SmartComponents/PatchManager/PatchManagerCard';
 import RemediationsCard from '../../SmartComponents/Remediations/RemediationsCard';
-import Footer from '../../SmartComponents/Footer/Footer';
 import './dashboard.scss';
 
 const Dashboard = () => {
@@ -80,7 +79,6 @@ const Dashboard = () => {
                 </Masonry>
             </Grid>
         </PageSection>
-        <Footer supportsSap={ true }/>
     </React.Fragment>);
 
 };
