@@ -151,7 +151,7 @@ const Advisor = () => {
                     title={intl.formatMessage(messages.advisorCardHeader1)}
                     isExpanded={JSON.parse(localStorage.getItem('dashboard_expanded_advisor1') || 'true')}
                     isExpandedCallback={isExpanded => localStorage.setItem('dashboard_expanded_advisor1', isExpanded)}
-                    body={<TemplateCardBody className='ins-c-advisor-recs__card-body pf-v5-u-pb-2xl'>
+                    body={<TemplateCardBody className='ins-c-advisor-recs__card-body pf-v6-u-pb-2xl'>
                         <Flex
                             direction={{ default: 'column' }}
                             alignItems={{ default: 'alignItemsCenter' }}>
@@ -164,9 +164,12 @@ const Advisor = () => {
                                         ? <React.Fragment>
                                             {
                                                 advisorIncidents?.meta?.count > 0 &&
-                                                    <ExclamationCircleIcon fill="var(--pf-t--global--icon--color--status--danger--default)" className='pf-v6-u-font-size-xl pf-u-mr-sm' />
+                                                    <ExclamationCircleIcon
+                                                        fill="var(--pf-t--global--icon--color--status--danger--default)"
+                                                        className='pf-v6-u-font-size-xl pf-u-mr-sm'
+                                                    />
                                             }
-                                            <span className='pf-v5-u-font-size-2xl pf-v5-u-text-align-center pf-v5-u-font-weight-normal'>
+                                            <span className='pf-v6-u-font-size-2xl pf-v6-u-text-align-center pf-v6-u-font-weight-normal'>
                                                 {intl.formatMessage(messages.incidents, { incidents: advisorIncidents.meta.count })}
                                             </span>
                                         </React.Fragment>
@@ -174,9 +177,9 @@ const Advisor = () => {
                                     }
                                 </Flex>
                                 <Content
-                                    className='insd-c-width-limiter pf-v5-u-text-align-center'
+                                    className='insd-c-width-limiter pf-v6-u-text-align-center'
                                     style={{ '--insd-c-width-limiter--MaxWidth': '34ch' }}>
-                                    <p className='pf-v5-u-font-size-md pf-v5-u-text-center'>
+                                    <p className='pf-v6-u-font-size-md pf-v6-u-text-center'>
                                         {intl.formatMessage(messages.advisorCardMessage)}
                                     </p>
                                 </Content>
@@ -203,7 +206,7 @@ const Advisor = () => {
                     </Flex>}
                     isExpanded={JSON.parse(localStorage.getItem('dashboard_expanded_advisor2') || 'true')}
                     isExpandedCallback={isExpanded => localStorage.setItem('dashboard_expanded_advisor2', isExpanded)}
-                    body={<TemplateCardBody className='ins-c-advisor-recs__card-body pf-v5-u-pb-0'>
+                    body={<TemplateCardBody className='ins-c-advisor-recs__card-body pf-v6-u-pb-0'>
                         <Flex
                             justifyContent={{ default: 'justifyContentCenter' }}
                             spaceItems={{ default: 'spaceItemsLg', sm: 'spaceItems2xl' }}
@@ -214,10 +217,10 @@ const Advisor = () => {
                                         direction={{ default: 'column' }}
                                         spaceItems={{ default: 'spaceItemsNone' }}
                                         alignItems={{ default: 'alignItemsCenter' }}>
-                                        <span className='pf-v5-u-font-size-2xl pf-v5-u-color-100 pf-v5-u-font-weight-normal'>
+                                        <span className='pf-v6-u-font-size-2xl pf-v6-u-color-100 pf-v6-u-font-weight-normal'>
                                             {recStatsStatus === 'fulfilled' ? risk : <Skeleton fontSize="3xl" width="50px" />}
                                         </span>
-                                        <span className='pf-v5-u-font-size-sm'>
+                                        <span className='pf-v6-u-font-size-sm'>
                                             {title}
                                         </span>
                                     </Flex>
@@ -229,7 +232,7 @@ const Advisor = () => {
                                     {intl.formatMessage(messages.advisorCardHeader3)}
                                 </Title>
                             </CardTitle>
-                            <CardBody className='pf-v5-u-pt-sm' style={{ minHeight: 135 }}>
+                            <CardBody className='pf-v6-u-pt-sm' style={{ minHeight: 135 }}>
                                 <Flex direction={{ default: 'column' }} spaceItems={{ default: 'spaceItemsLg' }}>
                                     {recStatsStatus === 'fulfilled' ?
                                         <div className="insd-c-dashboard__card-chart-container">

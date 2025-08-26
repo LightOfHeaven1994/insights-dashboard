@@ -35,7 +35,7 @@ const Dashboard = () => {
 
     return (<React.Fragment>
         <PageSection hasBodyWrapper isWidthLimited  className="insd-c-dashboard-header">
-            <Title headingLevel="h1" size="2xl" className="pf-v5-u-screen-reader">
+            <Title headingLevel="h1" size="2xl" className="pf-v6-u-screen-reader">
                 {intl.formatMessage(messages.dashboardTitle)}
             </Title>
             <SystemInventoryHeader/>

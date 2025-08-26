@@ -13,7 +13,7 @@ const FilterNotSupported = ({ href, title, appName }) => {
     return <EmptyState  headingLevel="h4" icon={ SearchIcon }  titleText={<>{title}</>}>
         <EmptyStateBody>
             {intl.formatMessage(appName !== 'Vulnerability' ? messages.functionalityNotSupported : messages.filteredResultsInApp, {
-                appname: <Link to={href} className='pf-v5-c-button pf-m-link pf-m-inline'>
+                appname: <Link to={href} className='pf-v6-c-button pf-m-link pf-m-inline'>
                     {appName}
                 </Link>
             })}

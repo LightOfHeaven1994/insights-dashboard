@@ -1,4 +1,4 @@
-@import "~@patternfly/patternfly/sass-utilities/scss-variables.scss";
+@import "~@patternfly/patternfly/sass-utilities";
 
 $ins-c-marketing-banner--breakpoint-map: build-breakpoint-map();
 
@@ -6,10 +6,10 @@ $ins-c-marketing-banner--breakpoint-map: build-breakpoint-map();
   --ins-c-marketing-banner--before--Opacity: 0.3;
   --ins-c-marketing-banner--before--BackgroundSize: #{pf-size-prem(200px)};
 
-  --ins-c-marketing-banner--PaddingTop: var(--pf-v6-global--spacer--4xl);
-  --ins-c-marketing-banner--PaddingRight: var(--pf-v6-global--spacer--md);
-  --ins-c-marketing-banner--PaddingBottom: var(--pf-v6-global--spacer--4xl);
-  --ins-c-marketing-banner--PaddingLeft: var(--pf-v6-global--spacer--md);
+  --ins-c-marketing-banner--PaddingTop: var(--pf-t--global--spacer--4xl);
+  --ins-c-marketing-banner--PaddingRight: var(--pf-t--global--spacer--md);
+  --ins-c-marketing-banner--PaddingBottom: var(--pf-t--global--spacer--4xl);
+  --ins-c-marketing-banner--PaddingLeft: var(--pf-t--global--spacer--md);
 
   --ins-c-marketing-banner--before--content--width: 2fr;
   --ins-c-marketing-banner--before--graphic--width: 1fr;
@@ -30,11 +30,11 @@ $ins-c-marketing-banner--breakpoint-map: build-breakpoint-map();
     --ins-c-marketing-banner--before--Opacity: 1;
   }
 
-  // @include pf-v5-build-css-variable-stack(
-  //   "--ins-c-marketing-banner--before--graphic--width",
-  //   "--ins-c-marketing-banner--graphic--width",
-  //   $ins-c-marketing-banner--breakpoint-map
-  // );
+  @include pf-v6-build-css-variable-stack(
+    "--ins-c-marketing-banner--before--graphic--width",
+    "--ins-c-marketing-banner--graphic--width",
+    $ins-c-marketing-banner--breakpoint-map
+  );
 
   &.insd-m-with-graphic {
     &:not(.pf-m-limit-width),
@@ -99,13 +99,13 @@ $ins-c-marketing-banner--breakpoint-map: build-breakpoint-map();
 
   &[class*="pf-m-dark-"].pf-v6-c-page__main-section {
     .pf-v6-c-button.pf-m-primary {
-      color: var(--pf-v6-global--info-color--100);
+      color: var(--pf-t--global--icon--color--status--info--default);
       // background-color: var(--pf-t--global--background--color--400);
 
       &:hover,
       &:focus,
       &:active {
-        color: var(--pf-v6-global--info-color--100);
+        color: var(--pf-t--global--icon--color--status--info--default);
         // background-color: #{$pf-v5-color-blue-500};
       }
     }

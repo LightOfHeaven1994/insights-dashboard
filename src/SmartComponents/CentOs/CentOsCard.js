@@ -37,7 +37,7 @@ const CentOsCard = () => {
         };
 
         getCentOsCount();
-    }, []);
+    }, [axios]);
 
     return (
         <ExpandableCardTemplate
