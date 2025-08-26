@@ -3,6 +3,7 @@ import './NewRules.scss';
 import {
     Button,
     ButtonVariant,
+    Content,
     DataList,
     DataListCell,
     DataListItem,
@@ -13,8 +14,6 @@ import {
     DescriptionListGroup,
     DescriptionListTerm,
     Icon,
-    Text,
-    TextContent,
     Title
 } from '@patternfly/react-core/dist/esm/components';
 import { Flex, FlexItem } from '@patternfly/react-core/dist/esm/layouts';
@@ -94,7 +93,7 @@ const NewRules = () => {
                                         }))}</span>
                                 </Title>
                             </FlexItem>
-                            <TextContent className='insd-c-width-limiter'
+                            <Content className='insd-c-width-limiter'
                                 style={{
                                     '--insd-c-width-limiter--MaxWidth-on-lg': '50ch',
                                     '--insd-c-width-limiter--MinWidth-on-lg': '50ch',
@@ -107,7 +106,7 @@ const NewRules = () => {
                                         description: `itemDescription-${index}`,
                                         defaultMessage: item.description
                                     }))}</div>
-                            </TextContent>
+                            </Content>
                             <DescriptionList>
                                 <DescriptionListGroup>
                                     <DescriptionListTerm>Associated CVEs</DescriptionListTerm>
@@ -124,8 +123,8 @@ const NewRules = () => {
                             </Flex>
                         </Flex>
                         <Flex flex={{ default: 'flex_2' }} alignItems={{ default: 'alignItemsCenter' }}>
-                            <TextContent>
-                                <Text component="h4" className="pf-v5-u-mb-xs">
+                            <Content>
+                                <Content component="h4" className="pf-v5-u-mb-xs">
                                     <Icon
                                         style={{ verticalAlign: -1 }}
                                         color="var(--pf-t--temp--dev--tbd)"/* CODEMODS: original v5 color was --pf-v5-global--danger-color--100 */
@@ -134,9 +133,9 @@ const NewRules = () => {
                                         <ExclamationCircleIcon/>
                                     </Icon>
                                     {intl.formatMessage(messages.systemsExposed, { count: item.systems_affected })}
-                                </Text>
+                                </Content>
                                 {intl.formatMessage(messages.systemsExposedDescription)}
-                            </TextContent>
+                            </Content>
                         </Flex>
                     </Flex>
                 } />
